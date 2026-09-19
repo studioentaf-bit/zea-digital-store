@@ -1,0 +1,30 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#FAF6F5] text-neutral-800 font-sans;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1edea;
+}
+::-webkit-scrollbar-thumb {
+  background: #d8bebe;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9b2b2b;
+}
+
+.gradient-hero-card {
+  background: linear-gradient(135deg, #fff7f7 0%, #fae8e8 40%, #f7dcdb 100%);
+}
